@@ -68,24 +68,3 @@ This project is licensed under the MIT License.
 **Ally Elvis Nzeyimana**
 
 ```
-
-### Instructions for Use
-1. **Copy the Content**: Copy the above content into your clipboard.
-
-2. **Create the README File**:
-   - Navigate to your `gh-aenzbi` local repository directory:
-     ```bash
-     cd ~/itsupport/aenzbi-artist/gh-aenzbi
-     ```
-   - Create or open the `README.md` file with your preferred text editor:
-     ```bash
-     nano README.md
-     ```
-   - Paste the copied content into the file and save it.
-
-3. **Commit Changes**: If you want to commit the changes to your repository, run:
-   ```bash
-   git add README.md
-   git commit -m "Update README file with project details"
-   git push origin main  # Adjust 'main' to your default branch if necessary
-   ```
