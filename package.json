@@ -1,10 +1,11 @@
 {
-  "devDependencies": {
-    "@eslint/js": "^9.13.0",
-    "eslint": "^9.13.0",
-    "eslint-plugin-react": "^7.37.1",
-    "globals": "^15.11.0",
-    "jest": "^29.7.0"
+  "name": "aenzbi-artist",
+  "version": "1.0.0",
+  "description": "A GitHub CLI extension to enhance workflows",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'No tests specified' && exit 0"
   },
-  "author": "Ally Elvis Nzeyimana"
+  "author": "allyelvis",
+  "license": "MIT"
 }
