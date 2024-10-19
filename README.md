@@ -1,87 +1,91 @@
-# aenzbi-artist
+# gh-aenzbi
 
-**aenzbi-artist** is a GitHub CLI extension designed to enhance your GitHub workflow by providing powerful commands for CI/CD setup, code linting, testing, issue management, pull requests, and repository scaffolding.
+## Overview
+`gh-aenzbi` is a GitHub CLI extension designed to enhance your workflow with powerful commands for Continuous Integration/Continuous Deployment (CI/CD) integration, linting, testing, issue management, and repository scaffolding. It aims to streamline common development tasks and improve productivity.
 
 ## Features
-
-- **CI/CD Integration**: Set up workflows for popular CI/CD providers like GitHub Actions and GitLab CI/CD.
-- **Linting**: Automatically lint your code and fix issues with a single command.
-- **Testing**: Run tests with optional code coverage reporting to ensure code quality.
-- **Issue Management**: Easily create new GitHub issues using predefined templates.
-- **Pull Request Management**: Streamline the process of creating and managing pull requests.
-- **Repository Scaffolding**: Quickly initialize new repositories with project templates and boilerplate code.
+- **CI/CD Integration**: Easily set up workflows with customizable options tailored to your project needs.
+- **Linting and Testing**: Configure linting rules, automatically fix issues, and generate code coverage reports.
+- **Collaboration Tools**: Simplify the management of issues and pull requests for better team collaboration.
+- **Repository Management**: Quickly initialize and scaffold new projects with predefined templates.
 
 ## Installation
-
-To install **aenzbi-artist**, ensure you have the [GitHub CLI](https://cli.github.com/) installed. You can then install this extension using the following command:
-
-```bash
-gh extension install allyelvis/aenzbi-artist
-```
-
-## Usage
-
-Here’s a quick overview of the available commands:
+To install the extension, run the following command:
 
 ```bash
-# Set up CI/CD for your project
-gh aenzbi ci setup
-
-# Lint the code
-gh aenzbi lint [--fix]
-
-# Run tests
-gh aenzbi test [--coverage]
-
-# Create a new issue
-gh aenzbi issue create [--template <template>] [options]
-
-# Create a new pull request
-gh aenzbi pr create [options]
-
-# Initialize a new repository with a template
-gh aenzbi repo init --template <template>
-
-# Scaffold a new project component
-gh aenzbi scaffold --type <type>
+gh extension install allyelvis/gh-aenzbi
 ```
 
-For detailed information on each command, run:
+## Commands
+### CI/CD Commands
+- `gh aenzbi ci setup`: Guides the user through setting up a CI/CD workflow with their preferred provider.
 
-```bash
-gh aenzbi <command> --help
-```
+### Linting Commands
+- `gh aenzbi lint [--fix]`: Lints the code and automatically fixes any fixable issues. Use `--fix` to apply fixes.
 
-## Development
+### Testing Commands
+- `gh aenzbi test [--coverage]`: Runs tests and generates a code coverage report. Use `--coverage` to include coverage metrics.
 
-To contribute to **aenzbi-artist**, follow these steps:
+### Issue Management
+- `gh aenzbi issue create [--template <template-name>]`: Creates a new issue using a pre-defined template. Available templates include `bug-report` and `feature-request`.
 
-1. Clone the repository:
+### Repository Management
+- `gh aenzbi repo init [--template <template-name>]`: Initializes a new repository with a basic structure based on the specified template. Available templates include `react-app`, `node-api`, and `python-lib`.
 
-   ```bash
-   git clone https://github.com/allyelvis/aenzbi-artist.git
-   cd aenzbi-artist
-   ```
+## Usage Examples
+- Set up a CI/CD workflow:
+  ```bash
+  gh aenzbi ci setup
+  ```
 
-2. Install dependencies:
+- Lint your code and fix issues:
+  ```bash
+  gh aenzbi lint --fix
+  ```
 
-   ```bash
-   npm install
-   ```
+- Run tests with coverage:
+  ```bash
+  gh aenzbi test --coverage
+  ```
 
-3. Run tests to ensure everything is working correctly:
+- Create a bug report issue:
+  ```bash
+  gh aenzbi issue create --template bug-report
+  ```
 
-   ```bash
-   npm test
-   ```
+- Initialize a new React app repository:
+  ```bash
+  gh aenzbi repo init --template react-app
+  ```
 
-4. Make your changes and submit a pull request.
+## Contributing
+Contributions are welcome! If you have suggestions for improvements or features, please submit a pull request or open an issue for discussion.
 
 ## License
+This project is licensed under the MIT License.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## Author
+**Ally Elvis Nzeyimana**
 
-## Acknowledgments
+```
 
-- [GitHub CLI](https://cli.github.com/) for the underlying command-line interface.
-- All contributors for their valuable input and feedback.
+### Instructions for Use
+1. **Copy the Content**: Copy the above content into your clipboard.
+
+2. **Create the README File**:
+   - Navigate to your `gh-aenzbi` local repository directory:
+     ```bash
+     cd ~/itsupport/aenzbi-artist/gh-aenzbi
+     ```
+   - Create or open the `README.md` file with your preferred text editor:
+     ```bash
+     nano README.md
+     ```
+   - Paste the copied content into the file and save it.
+
+3. **Commit Changes**: If you want to commit the changes to your repository, run:
+   ```bash
+   git add README.md
+   git commit -m "Update README file with project details"
+   git push origin main  # Adjust 'main' to your default branch if necessary
+   ```
